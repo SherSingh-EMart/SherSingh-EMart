@@ -1,0 +1,50 @@
+// AskMeTraveller.com – Full OTA Website Template (React + Tailwind + Airtable)
+
+import React from "react"; import Head from "next/head"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button";
+
+export default function HomePage() { return ( <div className="min-h-screen bg-gradient-to-br from-cyan-100 to-blue-200 p-4"> <Head> <title>AskMeTraveller | Explore Andaman & Nicobar</title> </Head>
+
+<header className="text-center py-10">
+    <h1 className="text-4xl font-bold text-blue-900">AskMeTraveller</h1>
+    <p className="text-xl text-blue-700 mt-2">Your Gateway to Andaman Adventures</p>
+  </header>
+
+  <section className="grid md:grid-cols-3 gap-6">
+    <Card>
+      <CardContent className="p-4">
+        <h2 className="text-2xl font-semibold">Book Ferries</h2>
+        <p className="text-sm text-gray-700 mt-2">
+          Book inter-island ferry tickets between Port Blair, Havelock, Neil, and more.
+        </p>
+        <Button className="mt-4 w-full bg-blue-700 hover:bg-blue-800">Search Ferries</Button>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardContent className="p-4">
+        <h2 className="text-2xl font-semibold">Tour Packages</h2>
+        <p className="text-sm text-gray-700 mt-2">
+          Find curated tour packages for scuba diving, island hopping, and more.
+        </p>
+        <Button className="mt-4 w-full bg-blue-700 hover:bg-blue-800">Explore Tours</Button>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardContent className="p-4">
+        <h2 className="text-2xl font-semibold">Plan My Trip (AI)</h2>
+        <p className="text-sm text-gray-700 mt-2">
+          Use AI to generate custom itineraries based on your preferences.
+        </p>
+        <Button className="mt-4 w-full bg-blue-700 hover:bg-blue-800">Try It Now</Button>
+      </CardContent>
+    </Card>
+  </section>
+
+  <footer className="text-center text-sm text-gray-600 mt-12">
+    &copy; 2025 AskMeTraveller.com. Built with ❤️ using AI.
+  </footer>
+</div>
+
+); }
+

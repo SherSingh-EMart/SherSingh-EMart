@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 2em;
+  background-color: #0f0f0f;
+  color: #33ff77;
+  font-family: 'Courier New', monospace;
+}
+.terminal {
+  max-width: 800px;
+  margin: auto;
+  word-break: break-word;
+}
+.prompt {
+  display: none;
+}
+input {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  width: 100%;
+  outline: none;
+}
+a {
+  color: #3399ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+input::after {
+  content: "_";
+  animation: blink 1s infinite;
+}
